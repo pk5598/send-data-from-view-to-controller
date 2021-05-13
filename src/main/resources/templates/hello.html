@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Thymeleaf Demo</title>
+	
+	<!-- referencing css template -->
+	
+	<link rel="stylesheet"
+	      th:href="@{/css/demo.css}"/>
+	
+	
+</head>
+
+<body>
+
+	<h1>Hello world we are in about page.</h1>
+	<h2>Name of the owner is <span th:text="${name}"></span></h2>
+    
+    <h1 th:text="${currentDate}"></h1> 
+</body>
+
+</html>
